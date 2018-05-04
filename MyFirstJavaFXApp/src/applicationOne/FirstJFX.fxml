@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="applicationOne.FXController">
+   <center>
+      <BorderPane prefHeight="607.0" prefWidth="602.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <Button fx:id="start_btn" mnemonicParsing="false" onAction="#startCamera" text="Start Camera" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+         <center>
+            <ImageView fx:id="currentFrame" fitHeight="228.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="33.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>
